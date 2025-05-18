@@ -1,0 +1,6 @@
+# requirements.txt additions
+flask-admin==1.6.0
+flask-limiter==2.4.0
+flask-talisman==0.8.1
+apscheduler==3.8.1
+pytest==7.0.1
