@@ -1,0 +1,7 @@
+FLASK_APP=app.py
+FLASK_ENV=production
+SECRET_KEY=your-secret-key-here
+DATABASE_URL=sqlite:///instance/tokens.db
+PAYPAL_MODE=sandbox
+PAYPAL_CLIENT_ID=your-client-id
+PAYPAL_CLIENT_SECRET=your-secret
