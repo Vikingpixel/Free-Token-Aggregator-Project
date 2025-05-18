@@ -1,0 +1,13 @@
+# scheduler.py
+from apscheduler.schedulers.background import BackgroundScheduler
+from scraper import update_offers
+
+def init_scheduler(app):
+    scheduler = BackgroundScheduler()
+    scheduler.add_job(
+        func=update_offers,
+        trigger="cron",
+        hour=3,  # Runs daily at 3 AM
+        args=[app]
+    )
+    scheduler.start()
